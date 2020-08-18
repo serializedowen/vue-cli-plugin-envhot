@@ -5,7 +5,7 @@
     "experimentalDecorators": true,
     "declarationDir": "./types",
     "outDir": "./lib",
-    "module": "CommonJS",
-    "sourceMap": true
+    "module": "UMD",
+    "sourceMap": false
   }
 }
