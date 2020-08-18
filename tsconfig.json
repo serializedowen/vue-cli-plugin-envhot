@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "declarationDir": "./types",
+    "outDir": "./lib",
+    "module": "CommonJS",
+    "sourceMap": true
+  }
+}
