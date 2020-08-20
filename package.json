@@ -1,6 +1,6 @@
 {
   "name": "vue-cli-plugin-envhot",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "hot reloading your .env files, never worry about restarting yor wde",
   "main": "lib/index.js",
   "scripts": {

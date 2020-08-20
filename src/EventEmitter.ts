@@ -6,8 +6,6 @@ export class EventEmitter {
   }
 
   on(event: string, callback: Function) {
-    this.listeners;
-
     if (!this.listeners[event]) {
       this.listeners[event] = [callback];
     } else {

@@ -14,7 +14,9 @@ export default (files: Array<string>) => {
       if (existsSync(file)) {
         const { error, parsed } = config({ path: file });
         if (error) throw new Error(`error parsing ${file}: ${error}`);
-        Object.entries(parsed).forEach(([k, v]) => storage.setValue(k, v));
+        Object.entries(parsed).forEach(([k, v]) =>
+          storage.setValue(k, v as string)
+        );
       }
     });
 

@@ -13,9 +13,6 @@ const envFiles = [
 ];
 
 module.exports = (api: PluginAPI) => {
-  // console.log(api.hasPlugin("DefinePlugin"));
-  // api.version
-
   api.chainWebpack((config) => {
     config.plugins.get("define").tap(runtimeValueFactory);
   });

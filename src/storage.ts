@@ -35,7 +35,6 @@ class Storage {
     keys2: string[],
     event
   ): { event: string; key: string }[] {
-    console.log(event);
     return keys1
       .filter((key) => {
         if (keys2.indexOf(key) === -1) {
