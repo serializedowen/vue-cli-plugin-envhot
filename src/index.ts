@@ -20,10 +20,15 @@ module.exports = (api: PluginAPI) => {
   api.configureDevServer((app, server) => {
     const watcher = watch(".env?(.development)?(.local)");
 
+    // changed envFile
     watcher.on("change", () => {
       parseEnv(envFiles);
       server.invalidate(() => {});
       // server.
     });
+
+    // immediately
+    parseEnv(envFiles);
+    server.invalidate(() => {});
   });
 };
