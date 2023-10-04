@@ -13,7 +13,7 @@ export default function runtimeValueFactory(args, ...rest) {
 
   Object.keys(arg[prop]).forEach((key) => {
     if (!initialized) {
-      // console.log(arg[prop][key]);
+      console.log(arg[prop][key]);
       storage.setValue(key, arg[prop][key]);
     }
 
@@ -31,7 +31,7 @@ export default function runtimeValueFactory(args, ...rest) {
   eventEmitter.on(DELETED_KEY, (key) => {
     delete arg[prop][key];
 
-    // console.log(key);
+    console.log(key);
   });
 
   if (!initialized) {
